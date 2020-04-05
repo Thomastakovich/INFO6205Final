@@ -22,5 +22,10 @@ public class ELO {
             e.play(u);
         }
         e.show();
+
+
+
+
+
     }
 }
