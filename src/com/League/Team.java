@@ -19,6 +19,36 @@ public class Team implements Comparable<Team>{
         this.finishedMatch = finishedMatch;
     }
 
+    public Team(int id, String name,int w, int d, int l) {
+        this.id = id;
+        this.name = name;
+        this.w = w;
+        this.d = d;
+        this.l = l;
+        this.point = 3 * w + 1 * d;
+        this.finishedMatch = w + d + l;
+    }
+
+    public Team(int id, String name) {
+        this.id = id;
+        this.name = name;
+        this.w = 0;
+        this.d = 0;
+        this.l = 0;
+        this.point = 0;
+        this.finishedMatch = 0;
+    }
+
+    public Team(String name) {
+        this.id = 0;
+        this.name = name;
+        this.w = 0;
+        this.d = 0;
+        this.l = 0;
+        this.point = 0;
+        this.finishedMatch = 0;
+    }
+
     public int getId() {
         return id;
     }
@@ -75,6 +105,15 @@ public class Team implements Comparable<Team>{
         this.finishedMatch = finishedMatch;
     }
 
+    public double getPointPerMatch() {
+
+        return finishedMatch == 0 ? 0 : new Double(point) / new Double(finishedMatch);
+    }
+
+    public int getPointPer100Match() {
+        return finishedMatch == 0 ? 0 : point * 5 / finishedMatch;
+    }
+
     public void win() {
         this.w++;
         this.point += 3;
@@ -100,5 +139,14 @@ public class Team implements Comparable<Team>{
     @Override
     public String toString() {
         return this.getName() + " ***** " + this.getW() + " ***** " + this.getD() + " ***** " + this.getL() + " ***** " + this.getPoint();
+    }
+
+    public static void main(String[]args) {
+        Team t1 = new Team("t1");
+        t1.win();
+        t1.draw();
+        System.out.println(t1.w);
+        System.out.println(t1.getPoint());
+        System.out.println(t1.getPointPerMatch());
     }
 }

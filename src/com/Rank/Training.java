@@ -1,21 +1,64 @@
 package com.Rank;
 
-import com.League.Match;
 import com.League.MatchResult;
-import com.League.Round;
 import com.League.Team;
 
 import java.util.HashMap;
 
-import static com.Rank.Training.initTeams;
-import static com.Rank.Training.relationStat;
-
-public class Main {
+public class Training {
 
     public static MatchResult HW = new MatchResult(3);
     public static MatchResult D = new MatchResult(1);
     public static MatchResult AW = new MatchResult(0);
     public static HashMap<Integer, int[]> relationship = new HashMap<>();
+
+    public static HashMap<String, Team> initTeams(String f) {
+        HashMap<String, Team> teams = new HashMap<>();
+        for(int i = 1; i < 11; i++) {
+            for (int j = 1; j < 3; j++) {
+                ReadFile.readBox(i, j, f);
+                teams.put(ReadFile.getResult(), new Team(ReadFile.getResult()));
+            }
+        }
+        return teams;
+    }
+
+    public static void relationStat(HashMap<String, Team> t, HashMap<Integer, int[]> r, String f) {
+        //HashMap<Integer, int[]> relationship = new HashMap<>();
+        for(int i = 1; i < 381; i++) {
+            ReadFile.readLine(i, f);
+            String[] match = ReadFile.getLineResult();
+            String home = match[1];
+            String away = match[2];
+            String result = match[3];
+            int homePiontPer100Match = t.get(home).getPointPer100Match();
+            int awayPiontPer100Match = t.get(away).getPointPer100Match();
+            if(!r.containsKey(homePiontPer100Match - awayPiontPer100Match)) {
+                r.put(homePiontPer100Match - awayPiontPer100Match, new int[3]);
+                if(result.equals("H"))      r.get(homePiontPer100Match - awayPiontPer100Match)[0]++;
+                else if(result.equals("D")) r.get(homePiontPer100Match - awayPiontPer100Match)[1]++;
+                else                        r.get(homePiontPer100Match - awayPiontPer100Match)[2]++;
+            }
+            else {
+                if(result.equals("H"))      r.get(homePiontPer100Match - awayPiontPer100Match)[0]++;
+                else if(result.equals("D")) r.get(homePiontPer100Match - awayPiontPer100Match)[1]++;
+                else                        r.get(homePiontPer100Match - awayPiontPer100Match)[2]++;
+            }
+            if(result.equals("H")) {
+                t.get(home).win();
+                t.get(away).lose();
+            }
+            else if(result.equals("D")) {
+                t.get(home).draw();
+                t.get(away).draw();
+            }
+            else {
+                t.get(home).lose();
+                t.get(away).win();
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         HashMap<String, Team> teams2000 = initTeams("datasets/2000-2001.csv");
@@ -60,28 +103,5 @@ public class Main {
 
         HashMapSort.sortandPrintHashMap(relationship);
 
-        Team t1 = new Team(1, "Liverpool", 27, 1, 1,82, 29);
-        Team t2 = new Team(2, "Everton", 10, 7, 12, 37, 29);
-        Team t3 = new Team(3, "Leicester City", 16, 5, 8, 53, 29);
-        int i = t1.getPointPer100Match() - t3.getPointPer100Match();
-        int total = relationship.get(i)[0] + relationship.get(i)[1] + relationship.get(i)[2];
-        double Pt1Win = (double)relationship.get(i)[0] / (double)total;
-        double PDraw = (double)relationship.get(i)[1] / (double)total;
-        double Pt1Lose = (double)relationship.get(i)[2] / (double)total;
-        System.out.println(i);
-        System.out.println("P(Liverpool win Leicester City: )" + Pt1Win);
-        System.out.println("P(Liverpool draw Leicester City: )" + PDraw);
-        System.out.println("P(Liverpool lose Leicester City: )" + Pt1Lose);
-
-        int i1 = t1.getPointPer100Match() - t2.getPointPer100Match();
-        int total1 = relationship.get(i1)[0] + relationship.get(i1)[1] + relationship.get(i1)[2];
-        double Pt1Win1 = (double)relationship.get(i1)[0] / (double)total1;
-        double PDraw1 = (double)relationship.get(i1)[1] / (double)total1;
-        double Pt1Lose1 = (double)relationship.get(i1)[2] / (double)total1;
-        System.out.println(i1);
-        System.out.println("P(Liverpool win Everton: )" + Pt1Win1);
-        System.out.println("P(Liverpool draw Everton: )" + PDraw1);
-        System.out.println("P(Liverpool lose Everton: )" + Pt1Lose1);
     }
-
 }

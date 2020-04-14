@@ -1,0 +1,381 @@
+Round,HomeTeam,AwayTeam,FTR
+1,Aston Villa,Bolton,D
+1,Everton,Man United,A
+1,Fulham,Birmingham,D
+1,Man City,West Brom,D
+1,Middlesbrough,Liverpool,D
+1,Portsmouth,Tottenham,A
+1,Sunderland,Charlton,A
+1,West Ham,Blackburn,H
+1,Arsenal,Newcastle,H
+1,Wigan,Chelsea,A
+2,Birmingham,Man City,A
+2,Blackburn,Fulham,H
+2,Charlton,Wigan,H
+2,Liverpool,Sunderland,H
+2,Man United,Aston Villa,H
+2,Newcastle,West Ham,D
+2,Tottenham,Middlesbrough,H
+2,West Brom,Portsmouth,H
+2,Bolton,Everton,A
+2,Chelsea,Arsenal,H
+3,Birmingham,Middlesbrough,A
+3,Portsmouth,Aston Villa,D
+3,Sunderland,Man City,A
+3,Arsenal,Fulham,H
+3,Blackburn,Tottenham,D
+3,Bolton,Newcastle,H
+3,Chelsea,West Brom,H
+3,Aston Villa,Blackburn,H
+3,Fulham,Everton,H
+3,Man City,Portsmouth,H
+4,Tottenham,Chelsea,A
+4,West Brom,Birmingham,A
+4,West Ham,Bolton,A
+4,Wigan,Sunderland,H
+4,Middlesbrough,Charlton,A
+4,Newcastle,Man United,A
+4,Birmingham,Charlton,A
+4,Chelsea,Sunderland,H
+4,Everton,Portsmouth,A
+4,Man United,Man City,D
+5,Middlesbrough,Arsenal,H
+5,Newcastle,Fulham,D
+5,Tottenham,Liverpool,D
+5,West Brom,Wigan,A
+5,Bolton,Blackburn,D
+5,West Ham,Aston Villa,H
+5,Aston Villa,Tottenham,D
+5,Charlton,Chelsea,A
+5,Fulham,West Ham,A
+5,Portsmouth,Birmingham,D
+6,Sunderland,West Brom,D
+6,Blackburn,Newcastle,A
+6,Liverpool,Man United,D
+6,Man City,Bolton,A
+6,Wigan,Middlesbrough,D
+6,Arsenal,Everton,H
+6,Birmingham,Liverpool,D
+6,Bolton,Portsmouth,H
+6,Chelsea,Aston Villa,H
+6,Everton,Wigan,A
+7,Man United,Blackburn,A
+7,Newcastle,Man City,H
+7,West Brom,Charlton,A
+7,West Ham,Arsenal,D
+7,Middlesbrough,Sunderland,A
+7,Tottenham,Fulham,H
+7,Blackburn,West Brom,H
+7,Charlton,Tottenham,A
+7,Fulham,Man United,A
+7,Portsmouth,Newcastle,D
+8,Sunderland,West Ham,D
+8,Arsenal,Birmingham,H
+8,Aston Villa,Middlesbrough,A
+8,Liverpool,Chelsea,A
+8,Man City,Everton,H
+8,Wigan,Bolton,H
+8,Chelsea,Bolton,H
+8,Liverpool,Blackburn,H
+8,Middlesbrough,Portsmouth,D
+8,Sunderland,Man United,A
+9,Tottenham,Everton,H
+9,West Brom,Arsenal,H
+9,Wigan,Newcastle,H
+9,Birmingham,Aston Villa,A
+9,Man City,West Ham,H
+9,Charlton,Fulham,D
+9,Arsenal,Man City,H
+9,Aston Villa,Wigan,A
+9,Blackburn,Birmingham,H
+9,Fulham,Liverpool,H
+10,Man United,Tottenham,D
+10,Portsmouth,Charlton,A
+10,Bolton,West Brom,H
+10,Everton,Chelsea,D
+10,Newcastle,Sunderland,H
+10,West Ham,Middlesbrough,H
+10,Birmingham,Everton,A
+10,Charlton,Bolton,A
+10,Chelsea,Blackburn,H
+10,Liverpool,West Ham,H
+11,Middlesbrough,Man United,H
+11,Sunderland,Portsmouth,A
+11,Tottenham,Arsenal,D
+11,Wigan,Fulham,H
+11,West Brom,Newcastle,A
+11,Man City,Aston Villa,H
+11,Arsenal,Sunderland,H
+11,Aston Villa,Liverpool,A
+11,Blackburn,Charlton,H
+11,Fulham,Man City,H
+12,Newcastle,Birmingham,H
+12,Portsmouth,Wigan,A
+12,West Ham,West Brom,H
+12,Everton,Middlesbrough,H
+12,Man United,Chelsea,H
+12,Bolton,Tottenham,H
+12,Charlton,Man United,A
+12,Chelsea,Newcastle,H
+12,Liverpool,Portsmouth,H
+12,Man City,Blackburn,D
+13,Sunderland,Aston Villa,A
+13,West Brom,Everton,H
+13,Wigan,Arsenal,A
+13,Middlesbrough,Fulham,H
+13,Tottenham,West Ham,D
+13,Arsenal,Blackburn,H
+13,Aston Villa,Charlton,H
+13,Man City,Liverpool,A
+13,Portsmouth,Chelsea,A
+13,Sunderland,Birmingham,A
+14,Wigan,Tottenham,A
+14,Everton,Newcastle,H
+14,Fulham,Bolton,H
+14,Middlesbrough,West Brom,D
+14,West Ham,Man United,A
+14,Sunderland,Liverpool,A
+14,Blackburn,Everton,A
+14,Bolton,Arsenal,H
+14,Chelsea,Middlesbrough,H
+14,Liverpool,Wigan,H
+15,Man United,Portsmouth,H
+15,Newcastle,Aston Villa,D
+15,Tottenham,Sunderland,H
+15,West Brom,Fulham,D
+15,Charlton,Man City,A
+15,Birmingham,West Ham,A
+15,Birmingham,Fulham,H
+15,Blackburn,West Ham,H
+15,Bolton,Aston Villa,D
+15,Charlton,Sunderland,H
+16,Chelsea,Wigan,H
+16,Liverpool,Middlesbrough,H
+16,Newcastle,Arsenal,H
+16,West Brom,Man City,H
+16,Man United,Everton,D
+16,Tottenham,Portsmouth,H
+16,Everton,West Ham,A
+16,Man United,Wigan,H
+16,Aston Villa,Man United,A
+16,Everton,Bolton,A
+17,Fulham,Blackburn,H
+17,Man City,Birmingham,H
+17,Portsmouth,West Brom,H
+17,West Ham,Newcastle,A
+17,Wigan,Charlton,H
+17,Arsenal,Chelsea,A
+17,Middlesbrough,Tottenham,D
+17,Aston Villa,Everton,H
+17,Charlton,Arsenal,A
+17,Chelsea,Fulham,H
+18,Liverpool,Newcastle,H
+18,Man United,West Brom,H
+18,Middlesbrough,Blackburn,A
+18,Portsmouth,West Ham,D
+18,Sunderland,Bolton,D
+18,Tottenham,Birmingham,H
+18,Wigan,Man City,H
+18,Arsenal,Portsmouth,H
+18,Birmingham,Man United,D
+18,Everton,Liverpool,A
+19,Fulham,Aston Villa,D
+19,Man City,Chelsea,A
+19,West Brom,Tottenham,H
+19,West Ham,Wigan,A
+19,Aston Villa,Arsenal,D
+19,Charlton,West Ham,H
+19,Chelsea,Birmingham,H
+19,Liverpool,West Brom,H
+19,Man United,Bolton,H
+19,Middlesbrough,Man City,D
+20,Portsmouth,Fulham,H
+20,Sunderland,Everton,A
+20,Tottenham,Newcastle,H
+20,Wigan,Blackburn,A
+20,Birmingham,Wigan,H
+20,Blackburn,Portsmouth,H
+20,Bolton,Liverpool,D
+20,Everton,Charlton,H
+20,Fulham,Sunderland,H
+20,Newcastle,Middlesbrough,D
+21,West Brom,Aston Villa,A
+21,West Ham,Chelsea,A
+21,Arsenal,Man United,D
+21,Man City,Tottenham,A
+21,Arsenal,Middlesbrough,H
+21,Aston Villa,West Ham,A
+21,Blackburn,Bolton,D
+21,Charlton,Birmingham,H
+21,Fulham,Newcastle,H
+21,Liverpool,Tottenham,H
+22,Man City,Man United,H
+22,Portsmouth,Everton,A
+22,Sunderland,Chelsea,A
+22,Wigan,West Brom,A
+22,Birmingham,Portsmouth,H
+22,Bolton,Man City,H
+22,Everton,Arsenal,H
+22,Middlesbrough,Wigan,A
+22,Newcastle,Blackburn,A
+22,Tottenham,Aston Villa,D
+23,West Brom,Sunderland,A
+23,Chelsea,Charlton,D
+23,Man United,Liverpool,H
+23,West Ham,Fulham,H
+23,Charlton,West Brom,D
+23,Fulham,Tottenham,H
+23,Sunderland,Middlesbrough,A
+23,Wigan,Everton,D
+23,Arsenal,West Ham,A
+23,Aston Villa,Chelsea,D
+24,Blackburn,Man United,H
+24,Liverpool,Birmingham,D
+24,Man City,Newcastle,H
+24,Portsmouth,Bolton,D
+24,Birmingham,Arsenal,A
+24,Bolton,Wigan,D
+24,Everton,Man City,H
+24,Man United,Fulham,H
+24,Middlesbrough,Aston Villa,A
+24,Newcastle,Portsmouth,H
+25,West Brom,Blackburn,H
+25,West Ham,Sunderland,H
+25,Chelsea,Liverpool,H
+25,Tottenham,Charlton,H
+25,Charlton,Liverpool,H
+25,Arsenal,Bolton,D
+25,Aston Villa,Newcastle,A
+25,Everton,Blackburn,H
+25,Fulham,West Brom,H
+25,Middlesbrough,Chelsea,H
+26,Portsmouth,Man United,A
+26,Wigan,Liverpool,A
+26,Man City,Charlton,H
+26,Sunderland,Tottenham,D
+26,West Ham,Birmingham,H
+26,Liverpool,Arsenal,H
+26,Blackburn,Sunderland,H
+26,Tottenham,Wigan,D
+26,Newcastle,Charlton,D
+26,Birmingham,Sunderland,H
+27,Blackburn,Arsenal,H
+27,Charlton,Aston Villa,D
+27,Chelsea,Portsmouth,H
+27,Newcastle,Everton,H
+27,Bolton,Fulham,H
+27,Liverpool,Man City,H
+27,West Brom,Middlesbrough,A
+27,Aston Villa,Portsmouth,H
+27,Fulham,Arsenal,A
+27,Liverpool,Charlton,D
+28,Middlesbrough,Birmingham,H
+28,Newcastle,Bolton,H
+28,West Brom,Chelsea,A
+28,West Ham,Everton,D
+28,Man City,Sunderland,H
+28,Tottenham,Blackburn,H
+28,Wigan,Man United,A
+28,Birmingham,West Brom,D
+28,Blackburn,Aston Villa,H
+28,Bolton,West Ham,H
+29,Chelsea,Tottenham,H
+29,Everton,Fulham,H
+29,Portsmouth,Man City,H
+29,Sunderland,Wigan,A
+29,Arsenal,Liverpool,H
+29,Charlton,Middlesbrough,H
+29,Man United,Newcastle,H
+29,Liverpool,Fulham,H
+29,Arsenal,Charlton,H
+29,Birmingham,Tottenham,A
+30,Blackburn,Middlesbrough,H
+30,Bolton,Sunderland,H
+30,Everton,Aston Villa,H
+30,Man City,Wigan,A
+30,West Brom,Man United,A
+30,West Ham,Portsmouth,A
+30,Fulham,Chelsea,H
+30,Newcastle,Liverpool,A
+30,Aston Villa,Fulham,D
+30,Chelsea,Man City,H
+31,Liverpool,Everton,H
+31,Sunderland,Blackburn,A
+31,Wigan,West Ham,A
+31,Charlton,Newcastle,H
+31,Man United,Birmingham,H
+31,Middlesbrough,Bolton,H
+31,Tottenham,West Brom,H
+31,Man United,West Ham,H
+31,Arsenal,Aston Villa,H
+31,Birmingham,Chelsea,D
+32,Bolton,Man United,A
+32,Everton,Sunderland,D
+32,Fulham,Portsmouth,A
+32,Newcastle,Tottenham,H
+32,West Brom,Liverpool,A
+32,Man City,Middlesbrough,A
+32,West Ham,Charlton,D
+32,Blackburn,Wigan,D
+32,Birmingham,Bolton,H
+32,Charlton,Everton,D
+33,Portsmouth,Blackburn,D
+33,Tottenham,Man City,H
+33,Wigan,Birmingham,D
+33,Aston Villa,West Brom,D
+33,Chelsea,West Ham,H
+33,Liverpool,Bolton,H
+33,Man United,Arsenal,H
+33,Middlesbrough,Newcastle,A
+33,Portsmouth,Arsenal,D
+33,Man United,Sunderland,D
+34,Arsenal,West Brom,H
+34,Bolton,Chelsea,A
+34,Everton,Tottenham,A
+34,Fulham,Charlton,H
+34,Newcastle,Wigan,H
+34,Portsmouth,Middlesbrough,H
+34,West Ham,Man City,H
+34,Aston Villa,Birmingham,H
+34,Blackburn,Liverpool,A
+34,Charlton,Portsmouth,H
+35,Chelsea,Everton,H
+35,Middlesbrough,West Ham,H
+35,Sunderland,Newcastle,A
+35,Tottenham,Man United,A
+35,West Brom,Bolton,D
+35,Wigan,Aston Villa,H
+35,Birmingham,Blackburn,H
+35,Arsenal,Tottenham,D
+35,Bolton,Charlton,H
+35,Everton,Birmingham,D
+36,Newcastle,West Brom,H
+36,Portsmouth,Sunderland,H
+36,Fulham,Wigan,H
+36,Aston Villa,Man City,A
+36,West Ham,Liverpool,A
+36,Birmingham,Newcastle,D
+36,Charlton,Blackburn,A
+36,Chelsea,Man United,H
+36,Liverpool,Aston Villa,H
+36,Man City,Fulham,A
+37,Middlesbrough,Everton,A
+37,Wigan,Portsmouth,A
+37,Tottenham,Bolton,H
+37,Man United,Middlesbrough,D
+37,Sunderland,Arsenal,A
+37,West Brom,West Ham,A
+37,Blackburn,Chelsea,H
+37,Bolton,Middlesbrough,D
+37,Man City,Arsenal,A
+37,Sunderland,Fulham,H
+38,Arsenal,Wigan,H
+38,Aston Villa,Sunderland,H
+38,Blackburn,Man City,H
+38,Bolton,Birmingham,H
+38,Everton,West Brom,D
+38,Fulham,Middlesbrough,H
+38,Man United,Charlton,H
+38,Newcastle,Chelsea,H
+38,Portsmouth,Liverpool,A
+38,West Ham,Tottenham,H

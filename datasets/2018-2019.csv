@@ -1,0 +1,381 @@
+Round,HomeTeam,AwayTeam,FTR
+1,Man United,Leicester,H
+1,Bournemouth,Cardiff,H
+1,Fulham,Crystal Palace,A
+1,Huddersfield,Chelsea,A
+1,Newcastle,Tottenham,A
+1,Watford,Brighton,H
+1,Wolves,Everton,D
+1,Arsenal,Man City,A
+1,Liverpool,West Ham,H
+1,Southampton,Burnley,D
+2,Cardiff,Newcastle,D
+2,Chelsea,Arsenal,H
+2,Everton,Southampton,H
+2,Leicester,Wolves,H
+2,Tottenham,Fulham,H
+2,West Ham,Bournemouth,A
+2,Brighton,Man United,H
+2,Burnley,Watford,A
+2,Man City,Huddersfield,H
+2,Crystal Palace,Liverpool,A
+3,Arsenal,West Ham,H
+3,Bournemouth,Everton,D
+3,Huddersfield,Cardiff,D
+3,Liverpool,Brighton,H
+3,Southampton,Leicester,A
+3,Wolves,Man City,D
+3,Fulham,Burnley,H
+3,Newcastle,Chelsea,A
+3,Watford,Crystal Palace,H
+3,Man United,Tottenham,A
+4,Brighton,Fulham,D
+4,Chelsea,Bournemouth,H
+4,Crystal Palace,Southampton,A
+4,Everton,Huddersfield,D
+4,Leicester,Liverpool,A
+4,Man City,Newcastle,H
+4,West Ham,Wolves,A
+4,Burnley,Man United,A
+4,Cardiff,Arsenal,A
+4,Watford,Tottenham,H
+5,Bournemouth,Leicester,H
+5,Chelsea,Cardiff,H
+5,Huddersfield,Crystal Palace,A
+5,Man City,Fulham,H
+5,Newcastle,Arsenal,A
+5,Tottenham,Liverpool,A
+5,Watford,Man United,A
+5,Everton,West Ham,A
+5,Wolves,Burnley,H
+5,Southampton,Brighton,D
+6,Brighton,Tottenham,A
+6,Burnley,Bournemouth,H
+6,Cardiff,Man City,A
+6,Crystal Palace,Newcastle,D
+6,Fulham,Watford,D
+6,Leicester,Huddersfield,H
+6,Liverpool,Southampton,H
+6,Man United,Wolves,D
+6,Arsenal,Everton,H
+6,West Ham,Chelsea,D
+7,Arsenal,Watford,H
+7,Chelsea,Liverpool,D
+7,Everton,Fulham,H
+7,Huddersfield,Tottenham,A
+7,Man City,Brighton,H
+7,Newcastle,Leicester,A
+7,West Ham,Man United,H
+7,Wolves,Southampton,H
+7,Cardiff,Burnley,A
+7,Bournemouth,Crystal Palace,H
+8,Brighton,West Ham,H
+8,Burnley,Huddersfield,D
+8,Crystal Palace,Wolves,A
+8,Leicester,Everton,A
+8,Man United,Newcastle,H
+8,Tottenham,Cardiff,H
+8,Watford,Bournemouth,A
+8,Fulham,Arsenal,A
+8,Liverpool,Man City,D
+8,Southampton,Chelsea,A
+9,Bournemouth,Southampton,D
+9,Cardiff,Fulham,H
+9,Chelsea,Man United,D
+9,Huddersfield,Liverpool,A
+9,Man City,Burnley,H
+9,Newcastle,Brighton,A
+9,West Ham,Tottenham,A
+9,Wolves,Watford,A
+9,Everton,Crystal Palace,H
+9,Arsenal,Leicester,H
+10,Brighton,Wolves,H
+10,Fulham,Bournemouth,A
+10,Leicester,West Ham,D
+10,Liverpool,Cardiff,H
+10,Southampton,Newcastle,D
+10,Watford,Huddersfield,H
+10,Burnley,Chelsea,A
+10,Crystal Palace,Arsenal,D
+10,Man United,Everton,H
+10,Tottenham,Man City,A
+11,Arsenal,Liverpool,D
+11,Bournemouth,Man United,A
+11,Cardiff,Leicester,A
+11,Everton,Brighton,H
+11,Newcastle,Watford,H
+11,West Ham,Burnley,H
+11,Wolves,Tottenham,A
+11,Chelsea,Crystal Palace,H
+11,Man City,Southampton,H
+11,Huddersfield,Fulham,H
+12,Cardiff,Brighton,H
+12,Crystal Palace,Tottenham,A
+12,Huddersfield,West Ham,D
+12,Leicester,Burnley,D
+12,Newcastle,Bournemouth,H
+12,Southampton,Watford,D
+12,Arsenal,Wolves,D
+12,Chelsea,Everton,D
+12,Liverpool,Fulham,H
+12,Man City,Man United,H
+13,Brighton,Leicester,D
+13,Everton,Cardiff,H
+13,Fulham,Southampton,H
+13,Man United,Crystal Palace,D
+13,Tottenham,Chelsea,H
+13,Watford,Liverpool,A
+13,West Ham,Man City,A
+13,Bournemouth,Arsenal,A
+13,Wolves,Huddersfield,A
+13,Burnley,Newcastle,A
+14,Cardiff,Wolves,H
+14,Crystal Palace,Burnley,H
+14,Huddersfield,Brighton,A
+14,Leicester,Watford,H
+14,Man City,Bournemouth,H
+14,Newcastle,West Ham,A
+14,Southampton,Man United,D
+14,Arsenal,Tottenham,H
+14,Chelsea,Fulham,H
+14,Liverpool,Everton,H
+15,Bournemouth,Huddersfield,H
+15,Brighton,Crystal Palace,H
+15,Watford,Man City,A
+15,West Ham,Cardiff,H
+15,Burnley,Liverpool,A
+15,Everton,Newcastle,D
+15,Fulham,Leicester,D
+15,Man United,Arsenal,D
+15,Tottenham,Southampton,H
+15,Wolves,Chelsea,H
+16,Arsenal,Huddersfield,H
+16,Bournemouth,Liverpool,A
+16,Burnley,Brighton,H
+16,Cardiff,Southampton,H
+16,Chelsea,Man City,H
+16,Leicester,Tottenham,A
+16,Man United,Fulham,H
+16,West Ham,Crystal Palace,H
+16,Newcastle,Wolves,A
+16,Everton,Watford,D
+17,Crystal Palace,Leicester,H
+17,Fulham,West Ham,A
+17,Huddersfield,Newcastle,A
+17,Man City,Everton,H
+17,Tottenham,Burnley,H
+17,Watford,Cardiff,H
+17,Wolves,Bournemouth,H
+17,Brighton,Chelsea,A
+17,Liverpool,Man United,H
+17,Southampton,Arsenal,H
+18,Wolves,Liverpool,A
+18,Arsenal,Burnley,H
+18,Bournemouth,Brighton,H
+18,Cardiff,Man United,A
+18,Chelsea,Leicester,A
+18,Huddersfield,Southampton,A
+18,Man City,Crystal Palace,A
+18,Newcastle,Fulham,D
+18,West Ham,Watford,A
+18,Everton,Tottenham,A
+19,Brighton,Arsenal,D
+19,Burnley,Everton,A
+19,Crystal Palace,Cardiff,D
+19,Fulham,Wolves,D
+19,Leicester,Man City,H
+19,Liverpool,Newcastle,H
+19,Man United,Huddersfield,H
+19,Tottenham,Bournemouth,H
+19,Watford,Chelsea,A
+19,Southampton,West Ham,A
+20,Brighton,Everton,H
+20,Fulham,Huddersfield,H
+20,Leicester,Cardiff,A
+20,Liverpool,Arsenal,H
+20,Tottenham,Wolves,A
+20,Watford,Newcastle,D
+20,Burnley,West Ham,H
+20,Crystal Palace,Chelsea,A
+20,Man United,Bournemouth,H
+20,Southampton,Man City,A
+21,Arsenal,Fulham,H
+21,Cardiff,Tottenham,A
+21,Everton,Leicester,A
+21,Bournemouth,Watford,D
+21,Chelsea,Southampton,D
+21,Huddersfield,Burnley,A
+21,Newcastle,Man United,A
+21,West Ham,Brighton,D
+21,Wolves,Crystal Palace,A
+21,Man City,Liverpool,H
+22,Brighton,Liverpool,A
+22,Burnley,Fulham,H
+22,Cardiff,Huddersfield,D
+22,Chelsea,Newcastle,H
+22,Crystal Palace,Watford,A
+22,Leicester,Southampton,A
+22,West Ham,Arsenal,H
+22,Everton,Bournemouth,H
+22,Tottenham,Man United,A
+22,Man City,Wolves,H
+23,Arsenal,Chelsea,H
+23,Bournemouth,West Ham,H
+23,Liverpool,Crystal Palace,H
+23,Man United,Brighton,H
+23,Newcastle,Cardiff,H
+23,Southampton,Everton,H
+23,Watford,Burnley,D
+23,Wolves,Leicester,H
+23,Fulham,Tottenham,A
+23,Huddersfield,Man City,A
+24,Arsenal,Cardiff,H
+24,Fulham,Brighton,H
+24,Huddersfield,Everton,A
+24,Man United,Burnley,D
+24,Newcastle,Man City,H
+24,Wolves,West Ham,H
+24,Bournemouth,Chelsea,H
+24,Liverpool,Leicester,D
+24,Southampton,Crystal Palace,D
+24,Tottenham,Watford,H
+25,Brighton,Watford,D
+25,Burnley,Southampton,D
+25,Cardiff,Bournemouth,H
+25,Chelsea,Huddersfield,H
+25,Crystal Palace,Fulham,H
+25,Everton,Wolves,A
+25,Tottenham,Newcastle,H
+25,Leicester,Man United,A
+25,Man City,Arsenal,H
+25,West Ham,Liverpool,D
+26,Everton,Man City,A
+26,Brighton,Burnley,A
+26,Crystal Palace,West Ham,D
+26,Fulham,Man United,A
+26,Huddersfield,Arsenal,A
+26,Liverpool,Bournemouth,H
+26,Southampton,Cardiff,A
+26,Watford,Everton,H
+26,Man City,Chelsea,H
+26,Tottenham,Leicester,H
+27,Wolves,Newcastle,D
+27,Cardiff,Watford,A
+27,West Ham,Fulham,H
+27,Bournemouth,Wolves,D
+27,Burnley,Tottenham,H
+27,Leicester,Crystal Palace,A
+27,Newcastle,Huddersfield,H
+27,Arsenal,Southampton,H
+27,Man United,Liverpool,D
+27,Cardiff,Everton,A
+28,Huddersfield,Wolves,H
+28,Leicester,Brighton,H
+28,Newcastle,Burnley,H
+28,Arsenal,Bournemouth,H
+28,Chelsea,Tottenham,H
+28,Crystal Palace,Man United,A
+28,Liverpool,Watford,H
+28,Man City,West Ham,H
+28,Southampton,Fulham,H
+28,Bournemouth,Man City,A
+29,Brighton,Huddersfield,H
+29,Burnley,Crystal Palace,A
+29,Man United,Southampton,H
+29,Tottenham,Arsenal,D
+29,West Ham,Newcastle,H
+29,Wolves,Cardiff,H
+29,Everton,Liverpool,D
+29,Fulham,Chelsea,A
+29,Watford,Leicester,H
+29,Cardiff,West Ham,H
+30,Crystal Palace,Brighton,A
+30,Huddersfield,Bournemouth,A
+30,Leicester,Fulham,H
+30,Man City,Watford,H
+30,Newcastle,Everton,H
+30,Southampton,Tottenham,H
+30,Arsenal,Man United,H
+30,Chelsea,Wolves,D
+30,Liverpool,Burnley,H
+30,Bournemouth,Newcastle,D
+31,Burnley,Leicester,A
+31,West Ham,Huddersfield,H
+31,Everton,Chelsea,H
+31,Fulham,Liverpool,A
+31,Brighton,Southampton,A
+31,Burnley,Wolves,H
+31,Crystal Palace,Huddersfield,H
+31,Fulham,Man City,A
+31,Leicester,Bournemouth,H
+31,Man United,Watford,H
+32,West Ham,Everton,A
+32,Cardiff,Chelsea,A
+32,Liverpool,Tottenham,H
+32,Arsenal,Newcastle,H
+32,Watford,Fulham,H
+32,Wolves,Man United,H
+32,Chelsea,Brighton,H
+32,Man City,Cardiff,H
+32,Tottenham,Crystal Palace,H
+32,Southampton,Liverpool,A
+33,Bournemouth,Burnley,A
+33,Huddersfield,Leicester,A
+33,Newcastle,Crystal Palace,A
+33,Everton,Arsenal,H
+33,Chelsea,West Ham,H
+33,Leicester,Newcastle,A
+33,Brighton,Bournemouth,A
+33,Burnley,Cardiff,H
+33,Fulham,Everton,H
+33,Man United,West Ham,H
+34,Southampton,Wolves,H
+34,Tottenham,Huddersfield,H
+34,Crystal Palace,Man City,A
+34,Liverpool,Chelsea,H
+34,Watford,Arsenal,A
+34,Brighton,Cardiff,A
+34,Bournemouth,Fulham,A
+34,Huddersfield,Watford,A
+34,Man City,Tottenham,H
+34,Newcastle,Southampton,H
+35,West Ham,Leicester,D
+35,Wolves,Brighton,D
+35,Arsenal,Crystal Palace,A
+35,Cardiff,Liverpool,A
+35,Everton,Man United,H
+35,Chelsea,Burnley,D
+35,Tottenham,Brighton,H
+35,Watford,Southampton,D
+35,Man United,Man City,A
+35,Wolves,Arsenal,H
+36,Liverpool,Huddersfield,H
+36,Brighton,Newcastle,D
+36,Crystal Palace,Everton,D
+36,Fulham,Cardiff,H
+36,Southampton,Bournemouth,D
+36,Tottenham,West Ham,A
+36,Watford,Wolves,A
+36,Burnley,Man City,A
+36,Leicester,Arsenal,H
+36,Man United,Chelsea,D
+37,Everton,Burnley,H
+37,Bournemouth,Tottenham,H
+37,Cardiff,Crystal Palace,A
+37,Newcastle,Liverpool,A
+37,West Ham,Southampton,H
+37,Wolves,Fulham,H
+37,Arsenal,Brighton,D
+37,Chelsea,Watford,H
+37,Huddersfield,Man United,D
+37,Man City,Leicester,H
+38,Brighton,Man City,A
+38,Burnley,Arsenal,A
+38,Crystal Palace,Bournemouth,H
+38,Fulham,Newcastle,A
+38,Leicester,Chelsea,D
+38,Liverpool,Wolves,H
+38,Man United,Cardiff,A
+38,Southampton,Huddersfield,D
+38,Tottenham,Everton,D
+38,Watford,West Ham,A
