@@ -24,7 +24,6 @@ public class Training {
     }
 
     public static void relationStat(HashMap<String, Team> t, HashMap<Integer, int[]> r, String f) {
-        //HashMap<Integer, int[]> relationship = new HashMap<>();
         for(int i = 1; i < 381; i++) {
             ReadFile.readLine(i, f);
             String[] match = ReadFile.getLineResult();
@@ -59,7 +58,7 @@ public class Training {
         }
     }
 
-
+    //Test for Training
     public static void main(String[] args) {
         HashMap<String, Team> teams2000 = initTeams("datasets/2000-2001.csv");
         HashMap<String, Team> teams2001 = initTeams("datasets/2001-2002.csv");
@@ -72,7 +71,7 @@ public class Training {
         HashMap<String, Team> teams2008 = initTeams("datasets/2008-2009.csv");
         HashMap<String, Team> teams2009 = initTeams("datasets/2009-2010.csv");
         HashMap<String, Team> teams2010 = initTeams("datasets/2010-2011.csv");
-//        HashMap<String, Team> teams2011 = initTeams("datasets/2011-2012.csv");
+        HashMap<String, Team> teams2011 = initTeams("datasets/2011-2012.csv");
         HashMap<String, Team> teams2012 = initTeams("datasets/2012-2013.csv");
         HashMap<String, Team> teams2013 = initTeams("datasets/2013-2014.csv");
         HashMap<String, Team> teams2014 = initTeams("datasets/2014-2015.csv");
@@ -92,7 +91,7 @@ public class Training {
         relationStat(teams2008, relationship, "datasets/2008-2009.csv");
         relationStat(teams2009, relationship, "datasets/2009-2010.csv");
         relationStat(teams2010, relationship, "datasets/2010-2011.csv");
-//        relationStat(teams2011, relationship, "datasets/2011-2012.csv");
+        relationStat(teams2011, relationship, "datasets/2011-2012.csv");
         relationStat(teams2012, relationship, "datasets/2012-2013.csv");
         relationStat(teams2013, relationship, "datasets/2013-2014.csv");
         relationStat(teams2014, relationship, "datasets/2014-2015.csv");
@@ -100,8 +99,7 @@ public class Training {
         relationStat(teams2016, relationship, "datasets/2016-2017.csv");
         relationStat(teams2017, relationship, "datasets/2017-2018.csv");
         relationStat(teams2018, relationship, "datasets/2018-2019.csv");
-
         HashMapSort.sortandPrintHashMap(relationship);
-
+        WriteFile.WriteRelationship(relationship);
     }
 }

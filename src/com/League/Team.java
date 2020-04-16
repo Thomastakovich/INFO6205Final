@@ -7,6 +7,7 @@ public class Team implements Comparable<Team>{
     private int d; //Draw
     private int l; //Lose
     private int point;
+    private double expectationPoint;
     private int finishedMatch;
 
     public Team(int id, String name,int w, int d, int l, int point, int finishedMatch) {
@@ -17,6 +18,7 @@ public class Team implements Comparable<Team>{
         this.l = l;
         this.point = point;
         this.finishedMatch = finishedMatch;
+        this.expectationPoint = point;
     }
 
     public Team(int id, String name,int w, int d, int l) {
@@ -27,6 +29,7 @@ public class Team implements Comparable<Team>{
         this.l = l;
         this.point = 3 * w + 1 * d;
         this.finishedMatch = w + d + l;
+        this.expectationPoint = point;
     }
 
     public Team(int id, String name) {
@@ -37,6 +40,7 @@ public class Team implements Comparable<Team>{
         this.l = 0;
         this.point = 0;
         this.finishedMatch = 0;
+        this.expectationPoint = point;
     }
 
     public Team(String name) {
@@ -47,6 +51,7 @@ public class Team implements Comparable<Team>{
         this.l = 0;
         this.point = 0;
         this.finishedMatch = 0;
+        this.expectationPoint = point;
     }
 
     public int getId() {
@@ -105,6 +110,14 @@ public class Team implements Comparable<Team>{
         this.finishedMatch = finishedMatch;
     }
 
+    public double getExpectationPoint() {
+        return expectationPoint;
+    }
+
+    public void setExpectationPoint(double expectationPoint) {
+        this.expectationPoint = expectationPoint;
+    }
+
     public double getPointPerMatch() {
 
         return finishedMatch == 0 ? 0 : new Double(point) / new Double(finishedMatch);
@@ -141,6 +154,7 @@ public class Team implements Comparable<Team>{
         return this.getName() + " ***** " + this.getW() + " ***** " + this.getD() + " ***** " + this.getL() + " ***** " + this.getPoint();
     }
 
+    //Test for Class
     public static void main(String[]args) {
         Team t1 = new Team("t1");
         t1.win();

@@ -1,16 +1,20 @@
 package com.Rank;
 
 import com.League.Match;
+import com.League.MatchResult;
 import com.League.Round;
-import com.League.Season;
 import com.League.Team;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+import java.util.HashMap;
 
-public class Test {
-    //init Teams
+import static com.Rank.Training.initTeams;
+import static com.Rank.Training.relationStat;
+
+public class Simulation {
+
+    //init Teams in Season 2019-2020
     public static Team LP = new Team(0,"Liverpool                ", 27, 1, 1, 82, 29);
     public static Team MC = new Team(1,"Manchester City          ", 18, 3, 7, 57, 28);
     public static Team LC = new Team(2,"Leicester City           ", 16, 5, 8, 53, 29);
@@ -31,9 +35,54 @@ public class Test {
     public static Team BM = new Team(17,"Bournemouth              ", 7, 6, 16, 27, 29);
     public static Team AV = new Team(18,"Aston Villa              ", 7, 4, 17, 25, 28);
     public static Team NC = new Team(19,"Norwich City             ", 5, 6, 18, 21, 29);
-    //public static Team[] teamsS19_20 = {LP,MC,LC,CHS,MU,WW,SU,TH,ASN,BL,CP,ET,NU,SA,BT,WHU,WF,BM,AV,NC};
 
-    public static void main(String[] args){
+    public static MatchResult HW = new MatchResult(3);
+    public static MatchResult D = new MatchResult(1);
+    public static MatchResult AW = new MatchResult(0);
+    public static HashMap<Integer, int[]> relationship = new HashMap<>();
+
+    public static void main(String[] args) {
+        HashMap<String, Team> teams2000 = initTeams("datasets/2000-2001.csv");
+        HashMap<String, Team> teams2001 = initTeams("datasets/2001-2002.csv");
+        HashMap<String, Team> teams2002 = initTeams("datasets/2002-2003.csv");
+        HashMap<String, Team> teams2003 = initTeams("datasets/2003-2004.csv");
+        HashMap<String, Team> teams2004 = initTeams("datasets/2004-2005.csv");
+        HashMap<String, Team> teams2005 = initTeams("datasets/2005-2006.csv");
+        HashMap<String, Team> teams2006 = initTeams("datasets/2006-2007.csv");
+        HashMap<String, Team> teams2007 = initTeams("datasets/2007-2008.csv");
+        HashMap<String, Team> teams2008 = initTeams("datasets/2008-2009.csv");
+        HashMap<String, Team> teams2009 = initTeams("datasets/2009-2010.csv");
+        HashMap<String, Team> teams2010 = initTeams("datasets/2010-2011.csv");
+        HashMap<String, Team> teams2011 = initTeams("datasets/2011-2012.csv");
+        HashMap<String, Team> teams2012 = initTeams("datasets/2012-2013.csv");
+        HashMap<String, Team> teams2013 = initTeams("datasets/2013-2014.csv");
+        HashMap<String, Team> teams2014 = initTeams("datasets/2014-2015.csv");
+        HashMap<String, Team> teams2015 = initTeams("datasets/2015-2016.csv");
+        HashMap<String, Team> teams2016 = initTeams("datasets/2016-2017.csv");
+        HashMap<String, Team> teams2017 = initTeams("datasets/2017-2018.csv");
+        HashMap<String, Team> teams2018 = initTeams("datasets/2018-2019.csv");
+
+        relationStat(teams2000, relationship, "datasets/2000-2001.csv");
+        relationStat(teams2001, relationship, "datasets/2001-2002.csv");
+        relationStat(teams2002, relationship, "datasets/2002-2003.csv");
+        relationStat(teams2003, relationship, "datasets/2003-2004.csv");
+        relationStat(teams2004, relationship, "datasets/2004-2005.csv");
+        relationStat(teams2005, relationship, "datasets/2005-2006.csv");
+        relationStat(teams2006, relationship, "datasets/2006-2007.csv");
+        relationStat(teams2007, relationship, "datasets/2007-2008.csv");
+        relationStat(teams2008, relationship, "datasets/2008-2009.csv");
+        relationStat(teams2009, relationship, "datasets/2009-2010.csv");
+        relationStat(teams2010, relationship, "datasets/2010-2011.csv");
+        relationStat(teams2011, relationship, "datasets/2011-2012.csv");
+        relationStat(teams2012, relationship, "datasets/2012-2013.csv");
+        relationStat(teams2013, relationship, "datasets/2013-2014.csv");
+        relationStat(teams2014, relationship, "datasets/2014-2015.csv");
+        relationStat(teams2015, relationship, "datasets/2015-2016.csv");
+        relationStat(teams2016, relationship, "datasets/2016-2017.csv");
+        relationStat(teams2017, relationship, "datasets/2017-2018.csv");
+        relationStat(teams2018, relationship, "datasets/2018-2019.csv");
+        relationship = HashMapSort.sortandPrintHashMap(relationship);
+
         ArrayList<Team> teamsS19_20 = new ArrayList<>();
         teamsS19_20.add(LP);
         teamsS19_20.add(MC);
@@ -62,7 +111,7 @@ public class Test {
         Match[] matchesS19_20R28 = {AVvsSU, MCvsASN};
         Round roundS19_20R28 = new Round(matchesS19_20R28);
         for (Match m : roundS19_20R28.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 30
         Match BTvsASN = new Match(BT, ASN,30);
@@ -78,7 +127,7 @@ public class Test {
         Match[] matchesS19_20R30 = {BTvsASN,MCvsBL,WFvsLC,BMvsCP,NUvsSU,NCvsSA,AVvsCHS,THvsMU,WHUvsWW,ETvsLP};
         Round roundS19_20R30 = new Round(matchesS19_20R30);
         for (Match m : roundS19_20R30.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 31
         Match THvsWHU = new Match(TH, WHU, 31);
@@ -94,7 +143,7 @@ public class Test {
         Match[] matchesS19_20R31 = {THvsWHU,BLvsWF,CHSvsMC,LPvsCP,NUvsAV,NCvsET,LCvsBT,MUvsSU,SAvsASN,WWvsBM};
         Round roundS19_20R31 = new Round(matchesS19_20R31);
         for (Match m : roundS19_20R31.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 32
         Match m320 = new Match(BM, NU, 32);
@@ -110,7 +159,7 @@ public class Test {
         Match[] matchesS19_20R32 = {m320,m321,m322,m323,m324,m325,m326,m327,m328,m329};
         Round roundS19_20R32 = new Round(matchesS19_20R32);
         for (Match m : roundS19_20R32.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 33
         Match m330 = new Match(NU, WHU, 33);
@@ -126,7 +175,7 @@ public class Test {
         Match[] matchesS19_20R33 = {m330,m331,m332,m333,m334,m335,m336,m337,m338,m339};
         Round roundS19_20R33 = new Round(matchesS19_20R33);
         for (Match m : roundS19_20R33.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 34
         Match m340 = new Match(BM, TH, 34);
@@ -142,7 +191,7 @@ public class Test {
         Match[] matchesS19_20R34 = {m340,m341,m342,m343,m344,m345,m346,m347,m348,m349};
         Round roundS19_20R34 = new Round(matchesS19_20R34);
         for (Match m : roundS19_20R34.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 35
         Match m350 = new Match(BM, LC, 35);
@@ -158,7 +207,7 @@ public class Test {
         Match[] matchesS19_20R35 = {m350,m351,m352,m353,m354,m355,m356,m357,m358,m359};
         Round roundS19_20R35 = new Round(matchesS19_20R35);
         for (Match m : roundS19_20R35.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 36
         Match m360 = new Match(ASN, LP, 36);
@@ -174,7 +223,7 @@ public class Test {
         Match[] matchesS19_20R36 = {m360,m361,m362,m363,m364,m365,m366,m367,m368,m369};
         Round roundS19_20R36 = new Round(matchesS19_20R36);
         for (Match m : roundS19_20R36.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 37
         Match m370 = new Match(AV, ASN, 37);
@@ -190,7 +239,7 @@ public class Test {
         Match[] matchesS19_20R37 = {m370,m371,m372,m373,m374,m375,m376,m377,m378,m379};
         Round roundS19_20R37 = new Round(matchesS19_20R37);
         for (Match m : roundS19_20R37.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
         //Round 38
         Match m380 = new Match(ASN, WF, 38);
@@ -206,7 +255,7 @@ public class Test {
         Match[] matchesS19_20R38 = {m380,m381,m382,m383,m384,m385,m386,m387,m388,m389};
         Round roundS19_20R38 = new Round(matchesS19_20R38);
         for (Match m : roundS19_20R38.getMatches()) {
-            ELOUtils.kickOff(m);
+            Rating.kickOff(m, relationship);
         }
 
         Collections.sort(teamsS19_20);
@@ -216,4 +265,5 @@ public class Test {
             System.out.println(t);
         }
     }
+
 }
