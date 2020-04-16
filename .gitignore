@@ -11,6 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
+*.idea
 *.jar
 *.war
 *.nar
@@ -18,6 +19,12 @@
 *.zip
 *.tar.gz
 *.rar
+
+# Anaconda-Navigator
+*.ipynb_checkpoints
+
+# MacOS
+*.DS_Store
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
