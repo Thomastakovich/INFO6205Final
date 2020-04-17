@@ -67,9 +67,9 @@ public class ReadFile {
     //Test
     public static void main(String[] args) {
         ReadFile file = new ReadFile();
-        file.readBox(1, 2, "../datasets/2000-2001.csv");
+        file.readBox(1, 2, "datasets/2000-2001.csv");
         System.out.println(file.result);
-        file.readLine(381, "../datasets/2000-2001.csv");
+        file.readLine(381, "datasets/2000-2001.csv");
         System.out.println(lineResult);
     }
 }
