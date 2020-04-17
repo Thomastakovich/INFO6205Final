@@ -123,7 +123,7 @@ public class Team implements Comparable<Team>{
         return finishedMatch == 0 ? 0 : new Double(point) / new Double(finishedMatch);
     }
 
-    public int getPointPer100Match() {
+    public int getPointPer5Match() {
         return finishedMatch == 0 ? 0 : point * 5 / finishedMatch;
     }
 

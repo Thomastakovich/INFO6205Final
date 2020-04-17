@@ -24,6 +24,7 @@ public class ReadFile {
         ReadFile.lineResult = lineResult;
     }
 
+    // Read a box of the .csv file
     public static void readBox(int row, int col, String fileName){
         result = null;
         String line = null;
@@ -43,6 +44,7 @@ public class ReadFile {
         }
     }
 
+    // Read a line of the .csv file
     public static void readLine(int row, String fileName){
         lineResult = null;
         String line = null;

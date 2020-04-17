@@ -1,14 +1,21 @@
-package com.Rank;
+package com.Main;
 
-import com.League.*;
+import com.League.Match;
+import com.League.MatchResult;
+import com.League.Round;
+import com.League.Team;
+import com.Rank.HashMapSort;
+import com.Rank.Rating;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import static com.Rank.Training.initTeams;
 import static com.Rank.Training.relationStat;
 
-public class RateExpectation {
+public class Simulation {
+
     //init Teams in Season 2019-2020
     public static Team LP = new Team(0,"Liverpool                ", 27, 1, 1, 82, 29);
     public static Team MC = new Team(1,"Manchester City          ", 18, 3, 7, 57, 28);
@@ -106,7 +113,7 @@ public class RateExpectation {
         Match[] matchesS19_20R28 = {AVvsSU, MCvsASN};
         Round roundS19_20R28 = new Round(matchesS19_20R28);
         for (Match m : roundS19_20R28.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 30
         Match BTvsASN = new Match(BT, ASN,30);
@@ -122,7 +129,7 @@ public class RateExpectation {
         Match[] matchesS19_20R30 = {BTvsASN,MCvsBL,WFvsLC,BMvsCP,NUvsSU,NCvsSA,AVvsCHS,THvsMU,WHUvsWW,ETvsLP};
         Round roundS19_20R30 = new Round(matchesS19_20R30);
         for (Match m : roundS19_20R30.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 31
         Match THvsWHU = new Match(TH, WHU, 31);
@@ -138,7 +145,7 @@ public class RateExpectation {
         Match[] matchesS19_20R31 = {THvsWHU,BLvsWF,CHSvsMC,LPvsCP,NUvsAV,NCvsET,LCvsBT,MUvsSU,SAvsASN,WWvsBM};
         Round roundS19_20R31 = new Round(matchesS19_20R31);
         for (Match m : roundS19_20R31.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 32
         Match m320 = new Match(BM, NU, 32);
@@ -154,7 +161,7 @@ public class RateExpectation {
         Match[] matchesS19_20R32 = {m320,m321,m322,m323,m324,m325,m326,m327,m328,m329};
         Round roundS19_20R32 = new Round(matchesS19_20R32);
         for (Match m : roundS19_20R32.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 33
         Match m330 = new Match(NU, WHU, 33);
@@ -170,7 +177,7 @@ public class RateExpectation {
         Match[] matchesS19_20R33 = {m330,m331,m332,m333,m334,m335,m336,m337,m338,m339};
         Round roundS19_20R33 = new Round(matchesS19_20R33);
         for (Match m : roundS19_20R33.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 34
         Match m340 = new Match(BM, TH, 34);
@@ -202,7 +209,7 @@ public class RateExpectation {
         Match[] matchesS19_20R35 = {m350,m351,m352,m353,m354,m355,m356,m357,m358,m359};
         Round roundS19_20R35 = new Round(matchesS19_20R35);
         for (Match m : roundS19_20R35.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 36
         Match m360 = new Match(ASN, LP, 36);
@@ -218,7 +225,7 @@ public class RateExpectation {
         Match[] matchesS19_20R36 = {m360,m361,m362,m363,m364,m365,m366,m367,m368,m369};
         Round roundS19_20R36 = new Round(matchesS19_20R36);
         for (Match m : roundS19_20R36.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 37
         Match m370 = new Match(AV, ASN, 37);
@@ -234,7 +241,7 @@ public class RateExpectation {
         Match[] matchesS19_20R37 = {m370,m371,m372,m373,m374,m375,m376,m377,m378,m379};
         Round roundS19_20R37 = new Round(matchesS19_20R37);
         for (Match m : roundS19_20R37.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
         //Round 38
         Match m380 = new Match(ASN, WF, 38);
@@ -250,14 +257,15 @@ public class RateExpectation {
         Match[] matchesS19_20R38 = {m380,m381,m382,m383,m384,m385,m386,m387,m388,m389};
         Round roundS19_20R38 = new Round(matchesS19_20R38);
         for (Match m : roundS19_20R38.getMatches()) {
-            Rating.exceptionKickOff(m, relationship);
+            Rating.kickOff(m, relationship);
         }
 
-        TeamSortByExpectation.sortTeams(teamsS19_20);
-        System.out.println("     Team                              Exception Points");
-        System.out.println("----------------------------------------------------------");
+        Collections.sort(teamsS19_20);
+        System.out.println("  Team                         Win     Draw    Lose    Points");
+        System.out.println("-------------------------------------------------------------");
         for (Team t : teamsS19_20) {
-            System.out.println(t.getName() + " ------       " + t.getExpectationPoint());
+            System.out.println(t);
         }
     }
+
 }

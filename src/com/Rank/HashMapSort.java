@@ -18,7 +18,7 @@ public class HashMapSort {
         HashMap<Integer,int[]> linkedHashMap = new HashMap<Integer,int[]>();
         for(Map.Entry<Integer,int[]> entry:list){
             linkedHashMap.put(entry.getKey(),entry.getValue());
-            System.out.println("Score Gap: " + entry.getKey() + " Result: " + entry.getValue()[0] + " " + entry.getValue()[1] + " " + entry.getValue()[2]);
+            //System.out.println("Score Gap: " + entry.getKey() + " Result: " + entry.getValue()[0] + " " + entry.getValue()[1] + " " + entry.getValue()[2]);
             //int[] i = {entry.getKey(), entry.getValue()[0], entry.getValue()[1], entry.getValue()[2]};
             //l.add(i);
         }

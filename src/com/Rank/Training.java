@@ -4,7 +4,7 @@ import com.League.MatchResult;
 import com.League.Team;
 
 import java.util.HashMap;
-
+// Data training
 public class Training {
 
     public static MatchResult HW = new MatchResult(3);
@@ -30,18 +30,18 @@ public class Training {
             String home = match[1];
             String away = match[2];
             String result = match[3];
-            int homePiontPer100Match = t.get(home).getPointPer100Match();
-            int awayPiontPer100Match = t.get(away).getPointPer100Match();
-            if(!r.containsKey(homePiontPer100Match - awayPiontPer100Match)) {
-                r.put(homePiontPer100Match - awayPiontPer100Match, new int[3]);
-                if(result.equals("H"))      r.get(homePiontPer100Match - awayPiontPer100Match)[0]++;
-                else if(result.equals("D")) r.get(homePiontPer100Match - awayPiontPer100Match)[1]++;
-                else                        r.get(homePiontPer100Match - awayPiontPer100Match)[2]++;
+            int homePiontPer5Match = t.get(home).getPointPer5Match();
+            int awayPiontPer5Match = t.get(away).getPointPer5Match();
+            if(!r.containsKey(homePiontPer5Match - awayPiontPer5Match)) {
+                r.put(homePiontPer5Match - awayPiontPer5Match, new int[3]);
+                if(result.equals("H"))      r.get(homePiontPer5Match - awayPiontPer5Match)[0]++;
+                else if(result.equals("D")) r.get(homePiontPer5Match - awayPiontPer5Match)[1]++;
+                else                        r.get(homePiontPer5Match - awayPiontPer5Match)[2]++;
             }
             else {
-                if(result.equals("H"))      r.get(homePiontPer100Match - awayPiontPer100Match)[0]++;
-                else if(result.equals("D")) r.get(homePiontPer100Match - awayPiontPer100Match)[1]++;
-                else                        r.get(homePiontPer100Match - awayPiontPer100Match)[2]++;
+                if(result.equals("H"))      r.get(homePiontPer5Match - awayPiontPer5Match)[0]++;
+                else if(result.equals("D")) r.get(homePiontPer5Match - awayPiontPer5Match)[1]++;
+                else                        r.get(homePiontPer5Match - awayPiontPer5Match)[2]++;
             }
             if(result.equals("H")) {
                 t.get(home).win();
