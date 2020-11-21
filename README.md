@@ -1,7 +1,5 @@
-# INFO6205 Final Project
 ## EPL Ranking System 
-### Qiushi Zhang NUID: 001057253 
-### Yu Chen NUID: 00001385622
+### Qiushi Zhang
 ----------
 ### Introduction:
 The java project can simulate the EPL schedule. Meanwhile, you can get a ranked expectational scoreboard.                
